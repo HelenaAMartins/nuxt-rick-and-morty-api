@@ -1,0 +1,50 @@
+<template>
+  <div>
+    <DetailHeader :character="character" />
+    <EpisodeTable :episodes="character.episode" />
+
+    <div class="flex justify-end max-w-7xl mx-auto my-10">
+      <NuxtLink to="/">
+        <span
+          class="
+            bg-gradient-to-r
+            from-indigo-500
+            via-purple-500
+            to-pink-500
+            hover:from-indigo-900 hover:via-purple-900 hover:top-pink-900
+            px-4
+            py-2
+            rounded
+            text-white
+            flex
+            gap-2
+            items-center
+
+            transition-all
+
+          "
+        >
+          <IconsBack class="w-5 h-5" /> Back to Characters</span
+        >
+      </NuxtLink>
+    </div>
+
+  </div>
+</template>
+<script>
+export default {
+  name: 'CharacterPage',
+
+  async asyncData({ params, redirect }) {
+    const character = await fetch(
+      `https://rickandmortyapi.com/api/character/${params.id}`
+    ).then((res) => res.json())
+
+    if (!character) redirect('/404')
+    console.log(character)
+    return { character }
+  },
+}
+</script>
+
+
