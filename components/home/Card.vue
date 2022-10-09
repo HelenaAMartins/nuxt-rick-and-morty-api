@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import { statusClass } from "../utils"
+import { statusClass } from "../../utils/index"
 export default {
   name: 'CharCard',
   props: {

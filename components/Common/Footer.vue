@@ -2,7 +2,7 @@
   <footer class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
       <div class="flex justify-center space-x-6 md:order-2">
-        <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-white hover:text-purple-100">
+        <a v-for="item in navigation" :key="item.name" :href="item.href" target="_blank" class="text-white hover:text-purple-100">
           <component :is="item.name" class="h-6 w-6" aria-hidden="true" />
         </a>
       </div>
@@ -19,15 +19,15 @@
 const navigation = [
   {
     name: 'IconsLinkedin',
-    href: '#',
+    href: 'https://www.linkedin.com/in/mhelena-martins',
   },
   {
     name: 'IconsGithub',
-    href: '#',
+    href: 'https://github.com/HelenaAMartins',
   },
   {
     name: 'IconsGlobe',
-    href: '#',
+    href: 'https://github.com/HelenaAMartins',
   },
 ]
 

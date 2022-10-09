@@ -76,7 +76,7 @@
                 "
                 :class="statusClass(character.status)"
               >
-                <b>Status: </b> {{ character.status }}</span
+                <b class="pr-2">Status: </b> {{ character.status }}</span
               >
             </div>
           </div>
@@ -92,7 +92,7 @@
 </template>
 
 <script>
-import { statusClass } from '../utils'
+import { statusClass } from '../../utils/index'
 export default {
   props: {
     character: {

@@ -1,7 +1,8 @@
 <template>
 <div>
-<HeroHome />
+<HomeHero />
 <HomeSlider :characters="characters"/>
+
 
   </div>
 </template>

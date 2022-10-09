@@ -22,7 +22,7 @@
       <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
         <div class="inline-flex rounded-md shadow">
           <a
-            href="#"
+            href="https://github.com/HelenaAMartins/nuxt-rick-and-morty-api"
             target="_blank"
             class="
               inline-flex
@@ -43,8 +43,8 @@
           </a>
         </div>
         <div class="ml-3 inline-flex rounded-md shadow">
-          <a
-            href="#"
+          <button
+            @click="toggleModal"
             class="
               inline-flex
               items-center
@@ -61,9 +61,19 @@
             "
           >
             Get in touch
-          </a>
+          </button>
         </div>
       </div>
     </div>
+    <CommonModalForm/>
   </div>
 </template>
+
+<script>
+import { mapActions } from "vuex";
+export default {
+  methods: {
+    ...mapActions(["toggleModal"]),
+  },
+}
+</script>

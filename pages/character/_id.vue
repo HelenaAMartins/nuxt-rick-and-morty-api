@@ -1,10 +1,10 @@
 <template>
   <div>
-    <DetailHeader :character="character" />
-    <EpisodeTable :episodes="character.episode" />
+    <CharacterHeader :character="character" />
+    <CharacterTable :episodes="character.episode" />
 
     <div class="flex justify-end max-w-7xl mx-auto my-10">
-      <NuxtLink to="/">
+      <NuxtLink to="/characters">
         <span
           class="
             bg-gradient-to-r
@@ -33,8 +33,6 @@
 </template>
 <script>
 export default {
-  name: 'CharacterPage',
-
   async asyncData({ params, redirect }) {
     const character = await fetch(
       `https://rickandmortyapi.com/api/character/${params.id}`

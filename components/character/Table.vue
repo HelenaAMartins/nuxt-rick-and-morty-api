@@ -54,7 +54,7 @@
               </tr>
             </thead>
             <tbody>
-              <Episodes
+              <CharacterEpisodes
                 v-for="(episode, idx) in episodes"
                 :key="episode"
                 :episode="episode"
