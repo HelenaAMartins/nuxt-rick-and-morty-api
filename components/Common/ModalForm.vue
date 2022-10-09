@@ -145,36 +145,43 @@
                 />
               </div>
             </div>
-            <div class="flex justify-end mt-4 items-center">
-              <IconsSpin
-                v-show="loading"
-                class="animate-spin w-5 mr-2 h-6 w-6"
-              />
-              <button
-                type="submit"
-                :disabled="loading"
-                class="
-                  inline-flex
-                  items-center
-                  px-4
-                  py-2
-                  border border-transparent
-                  text-sm
-                  font-medium
-                  rounded-md
-                  shadow-sm
-                  text-white
-                  bg-purple-500
-                  hover:bg-purple-700
-                  focus:outline-none
-                  focus:ring-2
-                  focus:ring-offset-2
-                  focus:ring-indigo-500
-                  disabled:opacity-75
-                "
+            <div class="flex justify-between items-center">
+              <div class="flex justify-end mt-4 items-center">
+                <button
+                  type="submit"
+                  :disabled="loading"
+                  class="
+                    inline-flex
+                    items-center
+                    px-4
+                    py-2
+                    border border-transparent
+                    text-sm
+                    font-medium
+                    rounded-md
+                    shadow-sm
+                    text-white
+                    bg-purple-500
+                    hover:bg-purple-700
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-offset-2
+                    focus:ring-indigo-500
+                    disabled:opacity-75
+                  "
+                >
+                  {{ loading ? 'Submitting...' : 'Submit' }}
+                </button>
+                <IconsSpin
+                  v-show="loading"
+                  class="animate-spin w-5 ml-2 h-6 w-6"
+                />
+              </div>
+              <span
+                class="bg-green-500 text-white mt-4 px-4 py-1 rounded"
+                v-if="showSentMsg"
+                >Message sent</span
               >
-                {{ loading ? 'Submitting...' : 'Submit' }}
-              </button>
             </div>
           </form>
         </div>
@@ -187,6 +194,7 @@ import { mapActions, mapGetters } from 'vuex'
 export default {
   data() {
     return {
+      showSentMsg: false,
       showModal: false,
       loading: false,
       name: '',
@@ -213,6 +221,8 @@ export default {
         this.name = ''
         this.email = ''
         this.message = ''
+        this.showSentMsg = true
+        setTimeout(() => (this.showSentMsg = false), 2500)
       })
       this.loading = false
     },

@@ -12,14 +12,14 @@
       "
     >
       <h2
-        class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+        class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left"
       >
         <span class="block">Would you like to check the code?</span>
         <span class="block text-indigo-600"
           >Take a look at the Github repository.</span
         >
       </h2>
-      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0 justify-center">
         <div class="inline-flex rounded-md shadow">
           <a
             href="https://github.com/HelenaAMartins/nuxt-rick-and-morty-api"
@@ -31,7 +31,8 @@
               px-5
               py-3
               border border-transparent
-              text-base
+              text-sm
+              md:text-base
               font-medium
               rounded-md
               text-white
@@ -52,7 +53,8 @@
               px-5
               py-3
               border border-transparent
-              text-base
+               text-sm
+              md:text-base
               font-medium
               rounded-md
               text-purple-600

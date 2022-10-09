@@ -45,6 +45,7 @@
                   rounded-full
                   bg-purple-900
                   text-purple-100
+
                 "
                 ><b class="pr-2"> Origin:</b> {{ character.origin.name }}</span
               >
@@ -59,6 +60,7 @@
                   rounded-full
                   bg-purple-900
                   text-purple-100
+                  my-2
                 "
                 ><b class="pr-2"> Location: </b>
                 {{ character.location.name }}</span

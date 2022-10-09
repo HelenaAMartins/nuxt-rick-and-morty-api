@@ -46,7 +46,7 @@
               material, please check my Github repository.
             </p>
           </div>
-          <div class="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
+          <div class="mt-10 flex max-w-prose mx-auto lg:max-w-none">
             <div class="rounded-md shadow">
               <a
                 href="https://github.com/HelenaAMartins/nuxt-rick-and-morty-api"
@@ -59,7 +59,8 @@
                   px-5
                   py-3
                   border border-transparent
-                  text-base
+                  text-xs
+                  md:text-base
                   font-medium
                   rounded-md
                   text-white
@@ -80,7 +81,8 @@
                   px-5
                   py-3
                   border border-transparent
-                  text-base
+                  text-xs
+                  md:text-base
                   font-medium
                   rounded-md
                   text-purple-600
@@ -105,7 +107,7 @@
         >
           <blockquote class="relative bg-white rounded-lg shadow-lg">
             <div class="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
-              <div class="relative text-lg text-gray-700 font-medium mt-8">
+              <div class="relative text-base md:text-lg text-gray-700 font-medium mt-8">
                 <p class="relative">
                   I'm Helena Martins, a frontend developer. I'm from Fortaleza,
                   Brazil, but currently I live in São Paulo, Brazil. Before

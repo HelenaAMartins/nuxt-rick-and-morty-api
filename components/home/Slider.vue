@@ -13,7 +13,9 @@
       <CommonTitle title="Characters" center color="text-white" />
 
       <carousel
+      :paginationSize="5"
         :perPageCustom="[
+        [320, 1],
           [768, 3],
           [1024, 4],
         ]"
@@ -50,10 +52,12 @@
 <script>
 import { Carousel, Slide } from 'vue-carousel'
 
+
 export default {
   components: {
     Carousel,
     Slide,
+
   },
   props: {
     characters: {
@@ -64,3 +68,13 @@ export default {
 }
 </script>
 
+
+<style scoped>
+::v-deep(.VueCarousel-dot-container) {
+  display: none
+}
+
+@media (min-width: 768px) {
+    ::v-deep(.VueCarousel-dot-container) {display: block}
+  }
+</style>

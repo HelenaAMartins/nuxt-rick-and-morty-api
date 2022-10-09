@@ -1,9 +1,9 @@
 <template>
   <div>
     <CharacterHeader :character="character" />
-    <CharacterTable :episodes="character.episode" />
 
-    <div class="flex justify-end max-w-7xl mx-auto my-10">
+    <CharacterTable :episodes="character.episode" />
+    <div class="flex justify-end max-w-7xl mr-4 md:mr-auto mx-auto my-10 px-2 lg:px-6">
       <NuxtLink to="/characters">
         <span
           class="
