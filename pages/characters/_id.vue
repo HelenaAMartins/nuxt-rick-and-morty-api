@@ -13,14 +13,7 @@
 </template>
 
 <script>
-import { seo } from '@/utils/seo'
-
 export default {
-  head() {
-    return {
-      ...seo('All Characters'),
-    }
-  },
   async asyncData({ params }) {
     const page = Number(params.id) || 1
     const charactersList = await fetch(

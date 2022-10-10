@@ -41,14 +41,7 @@
   </div>
 </template>
 <script>
-import { seo } from '@/utils/seo'
-
 export default {
-  head() {
-    return {
-      ...seo('Character Details'),
-    }
-  },
   async asyncData({ params, redirect }) {
     const character = await fetch(
       `https://rickandmortyapi.com/api/character/${params.id}`

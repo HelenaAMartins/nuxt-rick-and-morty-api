@@ -92,7 +92,7 @@
 </template>
 
 <script>
-import { statusClass } from '@/utils/index'
+import { statusClass } from '@/utils'
 
 export default {
   props: {
