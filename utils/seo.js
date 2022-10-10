@@ -7,6 +7,11 @@ export const seo = (pageTitle) => {
       { hid: 'description', name: 'description', content: 'Rick and Morty API fetch with Nuxt' },
       { name: 'format-detection', content: 'telephone=no' },
       {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: `Nuxt project - Rick and Morty API`,
+      },
+      {
         hid: 'og:title',
         property: 'og:title',
         content: `${pageTitle} - Rick and Morty API fetch with Nuxt`,
