@@ -144,7 +144,7 @@
 </template>
 
 <script>
-import { statusClass } from '../../utils'
+import { statusClass } from '@/utils'
 
 export default {
   props: {

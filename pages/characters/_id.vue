@@ -13,11 +13,13 @@
 </template>
 
 <script>
-import { seo } from '../../utils/seo'
+import { seo } from '@/utils/seo'
 
 export default {
-  head: {
-    ...seo('All Characters'),
+  head() {
+    return {
+      ...seo('All Characters'),
+    }
   },
   async asyncData({ params }) {
     const page = Number(params.id) || 1

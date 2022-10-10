@@ -45,7 +45,6 @@
                   rounded-full
                   bg-purple-900
                   text-purple-100
-
                 "
                 ><b class="pr-2"> Origin:</b> {{ character.origin.name }}</span
               >
@@ -74,7 +73,6 @@
                   leading-5
                   font-semibold
                   rounded-full
-
                 "
                 :class="statusClass(character.status)"
               >
@@ -94,7 +92,8 @@
 </template>
 
 <script>
-import { statusClass } from '../../utils/index'
+import { statusClass } from '@/utils/index'
+
 export default {
   props: {
     character: {

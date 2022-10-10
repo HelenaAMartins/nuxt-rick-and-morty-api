@@ -14,7 +14,6 @@
 
 <script>
 export default {
-  name: 'Episodes',
   async fetch() {
     this.episodeInfo = await fetch(this.episode)
       .then((res) => res.json())

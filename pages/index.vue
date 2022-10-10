@@ -6,11 +6,13 @@
 </template>
 
 <script>
-import { seo } from '../utils/seo'
+import { seo } from '@/utils/seo'
 
 export default {
-  head: {
-    ...seo('Home'),
+  head() {
+    return {
+      ...seo('Home'),
+    }
   },
   async fetch() {
     this.characters = await fetch('https://rickandmortyapi.com/api/character')

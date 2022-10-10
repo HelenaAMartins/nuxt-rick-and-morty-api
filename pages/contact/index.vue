@@ -2,11 +2,13 @@
   <ContactAbout />
 </template>
 <script>
-import { seo } from '../../utils/seo'
+import { seo } from '@/utils/seo'
 
 export default {
-  head: {
-    ...seo('Contact'),
+  head() {
+    return {
+      ...seo('Contact'),
+    }
   },
 }
 </script>

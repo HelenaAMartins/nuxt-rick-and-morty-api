@@ -97,7 +97,6 @@ export default {
       default: 1,
     },
   },
-
   methods: {
     currentItems() {
       return this.pageNumber === 1

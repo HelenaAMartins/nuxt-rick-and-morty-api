@@ -86,7 +86,8 @@
 </template>
 
 <script>
-import { nav } from '../../mocks/nav'
+import { nav } from '@/mocks/nav'
+
 export default {
   data() {
     return {

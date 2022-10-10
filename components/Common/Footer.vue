@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import { navigation } from '../../mocks/social'
+import { navigation } from '@/mocks/social'
 
 export default {
   setup() {

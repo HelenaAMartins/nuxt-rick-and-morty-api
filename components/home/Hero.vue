@@ -43,10 +43,13 @@
             Access my Github repository to know more.
           </p>
           <div class="mt-10 flex justify-center lg:justify-start">
-            <a v-for="item in navigation"
-          :key="item.name"
-          :href="item.href"
-          target="_blank" class="mr-4 hover:text-green-900 text-green-600">
+            <a
+              v-for="item in navigation"
+              :key="item.name"
+              :href="item.href"
+              target="_blank"
+              class="mr-4 hover:text-green-900 text-green-600"
+            >
               <component :is="item.name" class="w-6 h-6" />
             </a>
           </div>
@@ -73,7 +76,8 @@
 </template>
 
 <script>
-import {navigation} from '../../mocks/social'
+import { navigation } from '@/mocks/social'
+
 export default {
   setup() {
     return {

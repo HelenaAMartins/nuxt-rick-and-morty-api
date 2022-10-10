@@ -41,11 +41,13 @@
   </div>
 </template>
 <script>
-import { seo } from '../../utils/seo'
+import { seo } from '@/utils/seo'
 
 export default {
-  head: {
-    ...seo('Character Details'),
+  head() {
+    return {
+      ...seo('Character Details'),
+    }
   },
   async asyncData({ params, redirect }) {
     const character = await fetch(

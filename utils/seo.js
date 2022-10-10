@@ -33,5 +33,6 @@ export const seo = (pageTitle) => {
         content: 'summary_large_image',
       },
     ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
   }
 }
