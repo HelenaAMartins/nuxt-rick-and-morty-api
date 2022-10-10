@@ -16,7 +16,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Rick and Morty API fetch with Nuxt',
+        content: 'This project was made using Rick and Morty API, Nuxt and Tailwind. Access my Github repository to know more.',
       },
       { name: 'format-detection', content: 'telephone=no' },
       {
@@ -32,7 +32,7 @@ export default {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Rick and Morty API fetch with Nuxt',
+        content: 'This project was made using Rick and Morty API, Nuxt and Tailwind. Access my Github repository to know more.',
       },
       {
         hid: 'og:image',
