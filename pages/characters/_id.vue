@@ -14,6 +14,9 @@
 
 <script>
 export default {
+  head: {
+    title: 'Characters - Rick and Morty Nuxt',
+  },
   async asyncData({ params }) {
     const page = Number(params.id) || 1
     const charactersList = await fetch(

@@ -3,7 +3,19 @@
     <CharacterHeader :character="character" />
 
     <CharacterTable :episodes="character.episode" />
-    <div class="flex justify-end max-w-7xl mr-4 md:mr-auto mx-auto my-10 px-2 lg:px-6">
+    <div
+      class="
+        flex
+        justify-end
+        max-w-7xl
+        mr-4
+        md:mr-auto
+        mx-auto
+        my-10
+        px-2
+        lg:px-6
+      "
+    >
       <NuxtLink to="/characters">
         <span
           class="
@@ -19,20 +31,20 @@
             flex
             gap-2
             items-center
-
             transition-all
-
           "
         >
           <IconsBack class="w-5 h-5" /> Back to Characters</span
         >
       </NuxtLink>
     </div>
-
   </div>
 </template>
 <script>
 export default {
+  head: {
+    title: 'Characters details - Rick and Morty Nuxt',
+  },
   async asyncData({ params, redirect }) {
     const character = await fetch(
       `https://rickandmortyapi.com/api/character/${params.id}`

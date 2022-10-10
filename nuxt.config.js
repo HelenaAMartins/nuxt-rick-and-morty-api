@@ -4,14 +4,30 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-test-fetch',
+    title: 'Rick and Morty Nuxt',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Rick and Morty API fetch with Nuxt' },
       { name: 'format-detection', content: 'telephone=no' },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Rick and Morty API fetch with Nuxt',
+      },
+      { hid: 'og:image', property: 'og:image', content: 'https://nuxt-rick-and-morty-api.vercel.app/share.png'},
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://nuxt-rick-and-morty-api.vercel.app',
+      },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
