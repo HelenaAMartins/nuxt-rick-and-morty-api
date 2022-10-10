@@ -13,9 +13,11 @@
 </template>
 
 <script>
+import { seo } from '../../utils/seo'
+
 export default {
   head: {
-    title: 'Characters - Rick and Morty Nuxt',
+    ...seo('All Characters'),
   },
   async asyncData({ params }) {
     const page = Number(params.id) || 1

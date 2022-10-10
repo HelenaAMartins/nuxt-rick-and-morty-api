@@ -2,9 +2,11 @@
   <ContactAbout />
 </template>
 <script>
+import { seo } from '../../utils/seo'
+
 export default {
   head: {
-    title: 'Contact - Rick and Morty Nuxt',
+    ...seo('Contact'),
   },
 }
 </script>

@@ -6,9 +6,11 @@
 </template>
 
 <script>
+import { seo } from '../utils/seo'
+
 export default {
   head: {
-    title: 'Home - Rick and Morty Nuxt',
+    ...seo('Home'),
   },
   async fetch() {
     this.characters = await fetch('https://rickandmortyapi.com/api/character')

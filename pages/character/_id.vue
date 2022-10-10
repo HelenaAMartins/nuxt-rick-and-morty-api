@@ -41,9 +41,11 @@
   </div>
 </template>
 <script>
+import { seo } from '../../utils/seo'
+
 export default {
   head: {
-    title: 'Characters details - Rick and Morty Nuxt',
+    ...seo('Character Details'),
   },
   async asyncData({ params, redirect }) {
     const character = await fetch(
